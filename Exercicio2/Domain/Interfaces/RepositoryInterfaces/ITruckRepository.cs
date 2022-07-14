@@ -4,6 +4,6 @@ namespace Exercicio2.Domain.Interfaces.RepositoryInterfaces
 {
     public interface ITruckRepository : IBaseRepository<Truck>
     {
-         int GetTheAmountOfTrucks();
+         Task<int> GetTheAmountOfTrucks();
     }
 }
