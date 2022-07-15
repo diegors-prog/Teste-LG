@@ -17,9 +17,9 @@ namespace Exercicio1.Services
             this._unitOfWork = unitOfWork;
         }
 
-        public Task<bool> AddCustomerAsync(Customer customer)
+        public Task<Customer> AddCustomerAsync(Customer customer)
         {
-            throw new NotImplementedException();
+            
         }
 
         public Task<bool> EditCustomerAsync(Customer customer)
