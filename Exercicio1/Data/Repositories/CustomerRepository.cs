@@ -29,13 +29,18 @@ namespace Exercicio1.Data.Repositories
 
         public async Task<IList<Customer>> GetAllAsync()
         {
-            return await _context.DbSetCustomer.ToListAsync();
+            return await _context.DbSetCustomer
+            .AsNoTracking()
+            .Include(x => x.Contacts)
+            .ToListAsync();
         }
 
         public async Task<Customer> GetByIdAsync(int entityId)
         {
             return await _context.DbSetCustomer
-                .FirstOrDefaultAsync(x => x.Id == entityId);
+            .AsNoTracking()
+            .Include(x => x.Contacts)
+            .FirstOrDefaultAsync(x => x.Id == entityId);
         }
 
         public void Save(Customer entity)
