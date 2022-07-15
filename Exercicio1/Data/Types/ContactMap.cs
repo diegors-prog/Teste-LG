@@ -29,12 +29,10 @@ namespace Exercicio1.Data.Types
 
             builder.Property(i => i.RelationshipType)
                 .HasColumnName("relationship_type")
-                .HasColumnType("INTEGER")
                 .IsRequired();
 
             builder.Property(i => i.CustomerId)
                 .HasColumnName("customer_id")
-                .HasColumnType("INTEGER")
                 .IsRequired();
 
             builder.HasOne(x => x.Customer)

@@ -39,6 +39,9 @@ namespace Exercicio1.Services
         {
             var customer = await _customerRepository.GetByIdAsync(customerId);
             
+            if (customer == null)
+                return false;
+                
             // o banco já faz essa validação, pelo OnDelete.Retrict.
             // A regra implementada aqui é que um cliente só pode ser removido
             // da base de dados se não existir nenhum contato vinculado.

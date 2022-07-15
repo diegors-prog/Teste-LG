@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/arthurrocha/Desktop/Pasta Sem Título 2/Teste-LG/Exercicio1/Exercicio1.csproj": {}
+    "/Users/arthurrocha/Desktop/PastaSemTítulo2/Teste-LG/Exercicio1/Exercicio1.csproj": {}
   },
   "projects": {
-    "/Users/arthurrocha/Desktop/Pasta Sem Título 2/Teste-LG/Exercicio1/Exercicio1.csproj": {
+    "/Users/arthurrocha/Desktop/PastaSemTítulo2/Teste-LG/Exercicio1/Exercicio1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/arthurrocha/Desktop/Pasta Sem Título 2/Teste-LG/Exercicio1/Exercicio1.csproj",
+        "projectUniqueName": "/Users/arthurrocha/Desktop/PastaSemTítulo2/Teste-LG/Exercicio1/Exercicio1.csproj",
         "projectName": "Exercicio1",
-        "projectPath": "/Users/arthurrocha/Desktop/Pasta Sem Título 2/Teste-LG/Exercicio1/Exercicio1.csproj",
+        "projectPath": "/Users/arthurrocha/Desktop/PastaSemTítulo2/Teste-LG/Exercicio1/Exercicio1.csproj",
         "packagesPath": "/Users/arthurrocha/.nuget/packages/",
-        "outputPath": "/Users/arthurrocha/Desktop/Pasta Sem Título 2/Teste-LG/Exercicio1/obj/",
+        "outputPath": "/Users/arthurrocha/Desktop/PastaSemTítulo2/Teste-LG/Exercicio1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/arthurrocha/.nuget/NuGet/NuGet.Config"

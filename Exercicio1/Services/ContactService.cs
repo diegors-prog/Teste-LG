@@ -27,8 +27,8 @@ namespace Exercicio1.Services
             {
                 foreach(var contactInList in contactList)
                 {
-                    if (contactInList.PhoneNumber == contact.PhoneNumber || 
-                        contactInList.RelationshipType == contact.RelationshipType)
+                    if ((contactInList.Id == contact.Id && contactInList.PhoneNumber == contact.PhoneNumber) || 
+                        (contactInList.Id == contact.Id && contactInList.RelationshipType == contact.RelationshipType))
                         duplicateContacts.Add(contactInList);
                 }
             }

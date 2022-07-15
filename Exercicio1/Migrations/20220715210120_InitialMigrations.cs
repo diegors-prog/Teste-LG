@@ -29,7 +29,7 @@ namespace Exercicio1.Migrations
                 {
                     id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    relationship_type = table.Column<long>(type: "INTEGER", nullable: false),
+                    relationship_type = table.Column<int>(type: "INTEGER", nullable: false),
                     customer_id = table.Column<int>(type: "INTEGER", nullable: false),
                     name = table.Column<string>(type: "VARCHAR", maxLength: 80, nullable: false),
                     phone_number = table.Column<string>(type: "VARCHAR", maxLength: 20, nullable: false)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eqZD+I7kyJnMu2Xs/BKKPX+dixqn3s3Nu0EZK79z2Qh6UwHzh7B1RlhLdEjXVc43Ev7jlnWqza5t3dZYAybcBg==",
+  "dgSpecHash": "cjxUxX5X97FvA/aKzEm2bfvgu1g5wtqdt+KIMBUC1QsLydasdOAVgTY4Ye5OIBPySRJ52ibxk8gP/4jGlPLnkA==",
   "success": true,
-  "projectFilePath": "/Users/arthurrocha/Desktop/Pasta Sem Título 2/Teste-LG/Exercicio1/Exercicio1.csproj",
+  "projectFilePath": "/Users/arthurrocha/Desktop/PastaSemTítulo2/Teste-LG/Exercicio1/Exercicio1.csproj",
   "expectedPackageFiles": [
     "/Users/arthurrocha/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/arthurrocha/.nuget/packages/microsoft.aspnetcore.jsonpatch/6.0.3/microsoft.aspnetcore.jsonpatch.6.0.3.nupkg.sha512",
