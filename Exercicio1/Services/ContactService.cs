@@ -1,33 +1,71 @@
 using Exercicio1.Domain.Entities;
+using Exercicio1.Domain.Interfaces.RepositoryInterfaces;
 using Exercicio1.Domain.Interfaces.ServiceInterfaces;
 
 namespace Exercicio1.Services
 {
     public class ContactService : IContactService
     {
-        public Task<bool> AddContactAsync(Contact contact)
+        private readonly IContactRepository _contactRepository;
+        private readonly IUnitOfWork _unitOfWork;
+
+        public ContactService(
+            IContactRepository contactRepository,
+            IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            this._contactRepository = contactRepository;
+            this._unitOfWork = unitOfWork;
         }
 
-        public Task<bool> EditContactAsync(Contact contact)
+        public async Task<bool> AddContactAsync(Contact contact)
         {
-            throw new NotImplementedException();
+            IList<Contact> duplicateContacts = new List<Contact>();
+
+            var contactList = await _contactRepository.GetAllAsync();
+            
+            if (contactList.Count != 0)
+            {
+                foreach(var contactInList in contactList)
+                {
+                    if (contactInList.PhoneNumber == contact.PhoneNumber || 
+                        contactInList.RelationshipType == contact.RelationshipType)
+                        duplicateContacts.Add(contactInList);
+                }
+            }
+
+            if (duplicateContacts.Count != 0)
+                return false;
+            else
+            {
+                _contactRepository.Save(contact);
+                await _unitOfWork.CommitAsync();
+                return true;
+            }
         }
 
-        public Task<IList<Contact>> GetAllContactsAsync()
+        public async Task EditContactAsync(Contact contact)
         {
-            throw new NotImplementedException();
+            _contactRepository.Update(contact);
+            await _unitOfWork.CommitAsync();
         }
 
-        public Task<bool> RemoveContactAsync(long contactId)
+        public async Task<IList<Contact>> GetAllContactsAsync()
         {
-            throw new NotImplementedException();
+            return await _contactRepository.GetAllAsync();
         }
 
-        public Task<Contact> SearchContactAsync(long contactId)
+        public async Task<bool> RemoveContactAsync(int contactId)
         {
-            throw new NotImplementedException();
+            var removed = _contactRepository.Delete(contactId);
+            if (removed)
+                await _unitOfWork.CommitAsync();
+
+            return removed;
+        }
+
+        public async Task<Contact> SearchContactAsync(int contactId)
+        {
+            return await _contactRepository.GetByIdAsync(contactId);
         }
     }
 }

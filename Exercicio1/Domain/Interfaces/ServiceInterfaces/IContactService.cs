@@ -6,8 +6,8 @@ namespace Exercicio1.Domain.Interfaces.ServiceInterfaces
     {
         Task<bool> AddContactAsync(Contact contact);
         Task<IList<Contact>> GetAllContactsAsync();
-        Task<Contact> SearchContactAsync(long contactId);
-        Task<bool> EditContactAsync(Contact contact);
-        Task<bool> RemoveContactAsync(long contactId);
+        Task<Contact> SearchContactAsync(int contactId);
+        Task EditContactAsync(Contact contact);
+        Task<bool> RemoveContactAsync(int contactId);
     }
 }

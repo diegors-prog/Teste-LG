@@ -6,8 +6,8 @@ namespace Exercicio1.Domain.Interfaces.ServiceInterfaces
     {
         Task<Customer> AddCustomerAsync(Customer customer);
         Task<IList<Customer>> GetAllCustomersAsync();
-        Task<Customer> SearchCustomerAsync(long customerId);
-        Task<bool> EditCustomerAsync(Customer customer);
-        Task<bool> RemoveCustomerAsync(long customerId);
+        Task<Customer> SearchCustomerAsync(int customerId);
+        Task EditCustomerAsync(Customer customer);
+        Task<bool> RemoveCustomerAsync(int customerId);
     }
 }
