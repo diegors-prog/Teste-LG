@@ -1,30 +1,7 @@
 # Teste-LG
 
-# Exercício 3a: Faça uma consulta SQL que retorne a soma dos salários dos funcionários agrupados por empresa.
-# SELECT e.Descricao, SUM(f.Salario) AS Total
-# FROM Empresa e INNER JOIN
-#     Funcionario f
-#     ON e.Codigo = f.CodigoEmpresa
-# GROUP BY e.Descricao
+Docs com o SQL e a imagem com as respostas do teste de lógica.
 
-# Exercício 3b: Faça uma consulta SQL que retorne o nome das empresas que possuem mais de 30 funcionários.
-# SELECT e.Descricao
-# FROM Empresa e INNER JOIN
-#     Funcionario f
-#     ON e.Codigo = f.CodigoEmpresa
-# WHERE COUNT(f.Codigo) > 30
+https://docs.google.com/document/d/1MukY3KiY80i6XSeEmyCucq39Lu1NU3a_m4fByxmAXZ4/edit?usp=sharing
 
-# Exercício 3c: Faça uma consulta SQL que retorne o nome do funcionário, o código e a descrição do centro de custos e o código e a descrição do seu cargo.
-# SELECT f.Nome, cc.Codigo, cc.Descricao, c.Codigo, c.Descricao
-# FROM Cargo c INNER JOIN
-#     Funcionario f 
-#     ON c.Codigo = f.CodigoCargo
-#     INNER JOIN CentroDeCusto cc
-#     ON cc.Codigo = f.CodigoCentroDeCusto
-
-# Exercício 3d: Faça uma consulta SQL que retorne todos os funcionários que não possuem dependentes.
-# SELECT *
-# FROM Funcionario f INNER JOIN
-#     Dependente d 
-#     ON f.Codigo = d.CodigoFuncionario
-# WHERE d.CodigoFuncionario IS null
+Confesso que me falta mais treinamento na linguagem SQL, não tive tempo de fazer correções.
