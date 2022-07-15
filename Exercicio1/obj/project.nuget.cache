@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KwluMBXtcv9LK70jAI2hU9rFw4bIcNcj60lhe4ZflysZcPA/JCrWsfq0Pxh2ecfQH0WzvpDV4NaInRFcc0GeCw==",
+  "dgSpecHash": "eqZD+I7kyJnMu2Xs/BKKPX+dixqn3s3Nu0EZK79z2Qh6UwHzh7B1RlhLdEjXVc43Ev7jlnWqza5t3dZYAybcBg==",
   "success": true,
   "projectFilePath": "/Users/arthurrocha/Desktop/Pasta Sem Título 2/Teste-LG/Exercicio1/Exercicio1.csproj",
   "expectedPackageFiles": [
     "/Users/arthurrocha/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/arthurrocha/.nuget/packages/microsoft.aspnetcore.jsonpatch/6.0.3/microsoft.aspnetcore.jsonpatch.6.0.3.nupkg.sha512",
+    "/Users/arthurrocha/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/6.0.3/microsoft.aspnetcore.mvc.newtonsoftjson.6.0.3.nupkg.sha512",
+    "/Users/arthurrocha/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/arthurrocha/.nuget/packages/microsoft.data.sqlite.core/6.0.3/microsoft.data.sqlite.core.6.0.3.nupkg.sha512",
     "/Users/arthurrocha/.nuget/packages/microsoft.entityframeworkcore/6.0.3/microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
     "/Users/arthurrocha/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.3/microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
@@ -25,6 +28,8 @@
     "/Users/arthurrocha/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/Users/arthurrocha/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/Users/arthurrocha/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/arthurrocha/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/arthurrocha/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/arthurrocha/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.6/sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
     "/Users/arthurrocha/.nuget/packages/sqlitepclraw.core/2.0.6/sqlitepclraw.core.2.0.6.nupkg.sha512",
     "/Users/arthurrocha/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.6/sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
