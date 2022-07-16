@@ -27,37 +27,33 @@ namespace Exercicio1.Controllers
 
                 IList<CustomerDTO> customerDTOList = new List<CustomerDTO>();
 
-                if (customerList.Count != 0)
-                {
-                    foreach (var customer in customerList)
+                foreach (var customer in customerList)
+                {             
+                    IList<ContactDTO> contactDTOList = new List<ContactDTO>();
+                    
+                    foreach (var contact in customer.Contacts)
                     {
-                        
-                            IList<ContactDTO> contactDTOList = new List<ContactDTO>();
-                            foreach (var contact in customer.Contacts)
-                            {
-                                var contactDTO = new ContactDTO
-                                {
-                                    Id = contact.Id,
-                                    Name = contact.Name,
-                                    PhoneNumber = contact.PhoneNumber,
-                                    RelationshipType = contact.RelationshipType
-                                };
+                        var contactDTO = new ContactDTO
+                        {
+                            Id = contact.Id,
+                            Name = contact.Name,
+                            PhoneNumber = contact.PhoneNumber,
+                            RelationshipType = contact.RelationshipType
+                        };
 
-                                contactDTOList.Add(contactDTO);
-                            }
-
-                            var customerDTO = new CustomerDTO
-                            {
-                                Id = customer.Id,
-                                Name = customer.Name,
-                                PhoneNumber = customer.PhoneNumber,
-                                Email = customer.Email,
-                                Contacts = contactDTOList
-                            };
-
-                            customerDTOList.Add(customerDTO);
-                        
+                        contactDTOList.Add(contactDTO);
                     }
+
+                    var customerDTO = new CustomerDTO
+                    {
+                        Id = customer.Id,
+                        Name = customer.Name,
+                        PhoneNumber = customer.PhoneNumber,
+                        Email = customer.Email,
+                        Contacts = contactDTOList
+                    };
+
+                    customerDTOList.Add(customerDTO);          
                 }
 
                 return Ok(new ResultDTO<IList<CustomerDTO>>(customerDTOList));   
