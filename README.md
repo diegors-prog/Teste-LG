@@ -33,7 +33,9 @@ os conceitos de DTOs para retornar dados e as ViewModels para receber dados.
 
 No que poderia melhorar?
 
-Adicionar os pacotes FluentValidation e AutoMapper.
+Adicionar os pacotes FluentValidation, AutoMapper e desacoplar as camadas de Domain,
+Data e Services do projeto Web API, criando um projeto classlib individual
+para cada um.
 
 Exercício 02
 
