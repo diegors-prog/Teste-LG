@@ -1,6 +1,6 @@
 # Teste-LG
 
-No docs está o código SQL do exercício número 3, e também uma imagem com as respostas do teste de lógica.
+No docs estão os códigos SQL do exercício número 3, e também uma imagem com as respostas do teste de lógica.
 Confesso que me falta mais treinamento na linguagem SQL, não tive tempo de fazer correções.
 
 https://docs.google.com/document/d/1MukY3KiY80i6XSeEmyCucq39Lu1NU3a_m4fByxmAXZ4/edit?usp=sharing
