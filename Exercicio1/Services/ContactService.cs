@@ -56,11 +56,11 @@ namespace Exercicio1.Services
 
         public async Task<bool> RemoveContactAsync(int contactId)
         {
-            var removed = _contactRepository.Delete(contactId);
-            if (removed)
+            var wasRemoved = _contactRepository.Delete(contactId);
+            if (wasRemoved)
                 await _unitOfWork.CommitAsync();
 
-            return removed;
+            return wasRemoved;
         }
 
         public async Task<Contact> SearchContactAsync(int contactId)

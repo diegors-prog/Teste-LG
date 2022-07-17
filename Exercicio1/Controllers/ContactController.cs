@@ -101,9 +101,9 @@ namespace Exercicio1.Controllers
         {
             try
             {
-                var contactDeleted = await _contactService.RemoveContactAsync(id);
+                var wasRemoved = await _contactService.RemoveContactAsync(id);
 
-                if (contactDeleted == false)
+                if (wasRemoved == false)
                     return NotFound(new ResultDTO<CustomerDTO>("Conteúdo não encontrado"));
                 else
                     return Ok(new ResultDTO<int>(id));

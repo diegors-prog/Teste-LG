@@ -45,16 +45,18 @@ namespace Exercicio1.Services
             // o banco já faz essa validação, pelo OnDelete.Retrict.
             // A regra implementada aqui é que um cliente só pode ser removido
             // da base de dados se não existir nenhum contato vinculado.
-            // Mas essa validação funcionaria tbm, pq no repositorio
+            // Mas acredito que essa validação funciona tbm, pq no repositorio
             // estou fazendo um Include e trazendo a lista de contatos junto.
             if (customer.Contacts.Count != 0)
                 return false;
             else
             {
-                var removed = _customerRepository.Delete(customerId);
-                await _unitOfWork.CommitAsync();
+                var wasRemoved = _customerRepository.Delete(customerId);
 
-                return removed;
+                if (wasRemoved)
+                    await _unitOfWork.CommitAsync();
+
+                return wasRemoved;
             }
         }
 
